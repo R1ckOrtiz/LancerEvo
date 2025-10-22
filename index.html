@@ -51,151 +51,259 @@
                 <button class="pill" type="button">Configurar</button>
             </nav>
 
-            <div class="main-layout">
-                <aside class="side-nav" aria-label="Secções">
-                    <button class="side-link active" type="button">Performance</button>
-                    <button class="side-link" type="button">Design</button>
-                    <button class="side-link" type="button">Segurança</button>
-                    <button class="side-link" type="button">Luxo</button>
-                    <button class="side-link" type="button">Multimídia</button>
-                </aside>
+            <main>
+                <div class="main-layout">
+                    <aside class="side-nav" aria-label="Secções">
+                        <button class="side-link active" type="button">Performance</button>
+                        <button class="side-link" type="button">Design</button>
+                        <button class="side-link" type="button">Segurança</button>
+                        <button class="side-link" type="button">Luxo</button>
+                        <button class="side-link" type="button">Multimídia</button>
+                    </aside>
 
-                <section class="hero-panel">
-                    <div class="hero-heading">
-                        <span class="model-tag">Mitsubishi</span>
-                        <h1>Lancer Evolution X</h1>
-                        <span class="model-year">Final Edition • 2007-2016</span>
-                        <p>
-                            Voz rouca de rally e controle apurado em qualquer pista. O Evo X combina motor 2.0L turbo, 295 cv
-                            e o sistema S-AWC para entregar grip e confiança de sobra. Esta configuração especial exibe body kit
-                            inspirado em Varis, rodas pretas de offset negativo e faróis amarelos JDM.
-                        </p>
-                    </div>
+                    <section class="hero-panel">
+                        <span class="hero-orb hero-orb-blue" aria-hidden="true"></span>
+                        <span class="hero-orb hero-orb-red" aria-hidden="true"></span>
 
-                    <div class="hero-stage">
-                        <div class="car-stage">
-                            <img src="blue_Mitsubishi_Lancer-removebg-preview.png" alt="Mitsubishi Lancer Evolution X azul customizado" class="car-image">
+                        <div class="hero-heading">
+                            <span class="model-tag">Mitsubishi</span>
+                            <h1>Lancer Evolution X</h1>
+                            <span class="model-year">Final Edition • 2007-2016</span>
+                            <p>
+                                Voz rouca de rally e controle apurado em qualquer pista. O Evo X combina motor 2.0L turbo, 295 cv
+                                e o sistema S-AWC para entregar grip e confiança de sobra. Esta configuração especial exibe body kit
+                                inspirado em Varis, rodas pretas de offset negativo e faróis amarelos JDM.
+                            </p>
 
-                            <div class="callout callout-front">
-                                <span class="dot"></span>
-                                <div class="callout-card">
-                                    <strong>Pure Grip</strong>
-                                    <span>Tração S-AWC com AYC</span>
+                            <div class="hero-badges" role="list">
+                                <div class="hero-badge" role="listitem">
+                                    <span class="hero-badge-title">S-AWC 3.0</span>
+                                    <span class="hero-badge-copy">Torque vectoring ativo com calibração rally.</span>
                                 </div>
-                            </div>
-
-                            <div class="callout callout-roof">
-                                <span class="dot"></span>
-                                <div class="callout-card">
-                                    <strong>Panorama Black</strong>
-                                    <span>Teto contrastante</span>
+                                <div class="hero-badge" role="listitem">
+                                    <span class="hero-badge-title">Stage 2+</span>
+                                    <span class="hero-badge-copy">Mapeamento em dyno 4x4 com anti-lag inteligente.</span>
                                 </div>
-                            </div>
-
-                            <div class="callout callout-rear">
-                                <span class="dot"></span>
-                                <div class="callout-card">
-                                    <strong>Aero Pack</strong>
-                                    <span>Asa estilo Varis</span>
+                                <div class="hero-badge" role="listitem">
+                                    <span class="hero-badge-title">TC-SST Launch</span>
+                                    <span class="hero-badge-copy">Shift lightning e trocas em 0,15 s.</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="power-card">
-                            <span class="power-label">Potência liberada</span>
-                            <strong>295 cv</strong>
-                            <p>Motor 4B11T turbo com 40 kgfm a 3.500 rpm pronto para acelerar.</p>
+                        <div class="hero-stage">
+                            <div class="car-stage">
+                                <img src="blue_Mitsubishi_Lancer-removebg-preview.png" alt="Mitsubishi Lancer Evolution X azul customizado" class="car-image">
+
+                                <div class="callout callout-front">
+                                    <span class="dot"></span>
+                                    <div class="callout-card">
+                                        <strong>Pure Grip</strong>
+                                        <span>Tração S-AWC com AYC</span>
+                                    </div>
+                                </div>
+
+                                <div class="callout callout-roof">
+                                    <span class="dot"></span>
+                                    <div class="callout-card">
+                                        <strong>Panorama Black</strong>
+                                        <span>Teto contrastante</span>
+                                    </div>
+                                </div>
+
+                                <div class="callout callout-rear">
+                                    <span class="dot"></span>
+                                    <div class="callout-card">
+                                        <strong>Aero Pack</strong>
+                                        <span>Asa estilo Varis</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="power-card">
+                                <span class="power-label">Potência liberada</span>
+                                <strong>295 cv</strong>
+                                <div class="power-meter" role="presentation">
+                                    <span class="meter-fill" aria-hidden="true"></span>
+                                </div>
+                                <div class="power-meta">
+                                    <span>Torque 40 kgfm</span>
+                                    <span>Boost 1.6 bar</span>
+                                </div>
+                                <p>Motor 4B11T turbo com 40 kgfm a 3.500 rpm pronto para acelerar.</p>
+                                <button class="ghost-btn" type="button">Agendar test drive</button>
+                            </div>
                         </div>
+                    </section>
+                </div>
+
+                <section class="spec-marquee" aria-label="Dados de performance Evolution">
+                    <div class="marquee-track">
+                        <span class="marquee-item">Modo Gravel calibrado por WRC</span>
+                        <span class="marquee-item">Freios Brembo monobloco</span>
+                        <span class="marquee-item">Suspensão Bilstein / Eibach</span>
+                        <span class="marquee-item">Escape titânio 3" catback</span>
+                        <span class="marquee-item">Cluster digital Motec</span>
+                        <span class="marquee-item">Interior Recaro em alcantara</span>
+                        <span class="marquee-item">Rodas 18" forjadas</span>
+                        <span class="marquee-item">Modo Track com data logger</span>
+                        <span class="marquee-item">Modo Gravel calibrado por WRC</span>
+                        <span class="marquee-item">Freios Brembo monobloco</span>
+                        <span class="marquee-item">Suspensão Bilstein / Eibach</span>
+                        <span class="marquee-item">Escape titânio 3" catback</span>
+                        <span class="marquee-item">Cluster digital Motec</span>
+                        <span class="marquee-item">Interior Recaro em alcantara</span>
+                        <span class="marquee-item">Rodas 18" forjadas</span>
+                        <span class="marquee-item">Modo Track com data logger</span>
                     </div>
                 </section>
-            </div>
 
-            <section class="gallery-showcase" aria-labelledby="gallery-title">
-                <div class="gallery-info">
-                    <h2 id="gallery-title">Garage TizGon</h2>
-                    <p>
-                        Três visuais que traduzem o espírito Evolution: street stance agressivo, visão neon digital e configuração
-                        track ready. Explore, customize e escolha a personalidade que combina com o seu Evo X.
-                    </p>
-                    <div class="gallery-tags">
-                        <span class="tag">Street Spec</span>
-                        <span class="tag">Neon Night</span>
-                        <span class="tag">Track Focus</span>
+                <section class="gallery-showcase" aria-labelledby="gallery-title">
+                    <div class="gallery-info">
+                        <h2 id="gallery-title">Garage TizGon</h2>
+                        <p>
+                            Três visuais que traduzem o espírito Evolution: street stance agressivo, visão neon digital e configuração
+                            track ready. Explore, customize e escolha a personalidade que combina com o seu Evo X.
+                        </p>
+                        <div class="gallery-tags">
+                            <span class="tag">Street Spec</span>
+                            <span class="tag">Neon Night</span>
+                            <span class="tag">Track Focus</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="gallery-grid">
-                    <figure class="gallery-card gallery-card-main">
-                        <img src="transferir-removebg-preview.png" alt="Lancer Evolution X azul em stance baixo e rodas pretas">
-                        <figcaption>
-                            <strong>Urban Assault</strong>
-                            <span>Body kit wide e fitment perfeito para as ruas.</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="gallery-card gallery-card-side">
-                        <img src="transferir__1_-removebg-preview.png" alt="Arte digital de Lancer Evolution X com iluminação neon">
-                        <figcaption>
-                            <strong>Neon Dream</strong>
-                            <span>Visual digital com reflexos inspirados em city lights.</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="gallery-card gallery-card-side">
-                        <img src="transferir__2_-removebg-preview.png" alt="Lancer Evolution X cinza em preparação de pista com asa">
-                        <figcaption>
-                            <strong>Track Weapon</strong>
-                            <span>Preparação focada em grip com asa e cambagem agressiva.</span>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
+                    <div class="gallery-grid">
+                        <figure class="gallery-card gallery-card-main">
+                            <img src="transferir-removebg-preview.png" alt="Lancer Evolution X azul em stance baixo e rodas pretas">
+                            <figcaption>
+                                <strong>Urban Assault</strong>
+                                <span>Body kit wide e fitment perfeito para as ruas.</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-card gallery-card-side">
+                            <img src="transferir__1_-removebg-preview.png" alt="Arte digital de Lancer Evolution X com iluminação neon">
+                            <figcaption>
+                                <strong>Neon Dream</strong>
+                                <span>Visual digital com reflexos inspirados em city lights.</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-card gallery-card-side">
+                            <img src="transferir__2_-removebg-preview.png" alt="Lancer Evolution X cinza em preparação de pista com asa">
+                            <figcaption>
+                                <strong>Track Weapon</strong>
+                                <span>Preparação focada em grip com asa e cambagem agressiva.</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
 
-            <section class="highlight-strip" aria-labelledby="feature-highlights">
-                <div class="highlight-header">
-                    <h2 id="feature-highlights">Feature Highlights</h2>
-                    <span class="highlight-caption">Engenharia de pista para as ruas.</span>
-                </div>
-                <div class="highlight-grid">
-                    <article class="highlight-card">
-                        <span class="label">Capacidade</span>
-                        <strong>4 lugares</strong>
-                        <span class="note">Espaço para o time e o equipamento.</span>
-                    </article>
-                    <article class="highlight-card">
-                        <span class="label">Motor</span>
-                        <strong>4B11T</strong>
-                        <span class="note">2.0L turbo de alumínio com injeção direta.</span>
-                    </article>
-                    <article class="highlight-card">
-                        <span class="label">0-100 km/h</span>
-                        <strong>4,8 s</strong>
-                        <span class="note">Launch control com gestão de torque ativa.</span>
-                    </article>
-                    <article class="highlight-card">
-                        <span class="label">Transmissão</span>
-                        <strong>TC-SST</strong>
-                        <span class="note">6 marchas dupla embreagem com modos S-Sport.</span>
-                    </article>
-                    <article class="highlight-card">
-                        <span class="label">Top speed</span>
-                        <strong>250 km/h</strong>
-                        <span class="note">Limitador eletrônico com estabilidade plena.</span>
-                    </article>
-                </div>
-            </section>
+                <section class="experience-lab" aria-labelledby="experience-title">
+                    <div class="experience-header">
+                        <h2 id="experience-title">Tuning Lab Experience</h2>
+                        <p>
+                            O Evo X recebe atenção cirúrgica no nosso laboratório: calibramos, lapidamos o visual e te entregamos uma experiência
+                            completa de track day com suporte de pitlane.
+                        </p>
+                    </div>
+                    <div class="experience-grid">
+                        <article class="experience-card">
+                            <header>
+                                <span class="experience-tag">Stage 2</span>
+                                <h3>Performance Lab</h3>
+                            </header>
+                            <p>Mapeamentos custom com telemetria ao vivo e protocolos anti-lag ajustados para seu estilo.</p>
+                            <ul class="experience-list">
+                                <li>Dyno 4x4 com logs em tempo real</li>
+                                <li>Controle térmico com spray intercooler</li>
+                                <li>Relatórios com gráficos comparativos</li>
+                            </ul>
+                        </article>
+                        <article class="experience-card">
+                            <header>
+                                <span class="experience-tag">Driver</span>
+                                <h3>Coaching Onboard</h3>
+                            </header>
+                            <p>Aprenda a explorar cada modo S-AWC com analista acompanhando suas voltas em VR e rádio.</p>
+                            <ul class="experience-list">
+                                <li>Briefing com simulação virtual</li>
+                                <li>Traçados com overlay holográfico</li>
+                                <li>Feedback com ghost lap pessoal</li>
+                            </ul>
+                        </article>
+                        <article class="experience-card">
+                            <header>
+                                <span class="experience-tag">Track</span>
+                                <h3>Suporte Pro</h3>
+                            </header>
+                            <p>Equipe de pit-stop dedicada, ajustes rápidos e monitoramento constante de pneus e fluidos.</p>
+                            <ul class="experience-list">
+                                <li>Pit wall com painel LED</li>
+                                <li>Setup rápido de cambagem</li>
+                                <li>Alertas via app em tempo real</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
 
-            <section class="color-strip" aria-labelledby="color-options">
-                <div class="color-header">
-                    <h2 id="color-options">Cores</h2>
-                    <span>Escolha o tom que fala por você.</span>
+                <section class="highlight-strip" aria-labelledby="feature-highlights">
+                    <div class="highlight-header">
+                        <h2 id="feature-highlights">Feature Highlights</h2>
+                        <span class="highlight-caption">Engenharia de pista para as ruas.</span>
+                    </div>
+                    <div class="highlight-grid">
+                        <article class="highlight-card">
+                            <span class="label">Capacidade</span>
+                            <strong>4 lugares</strong>
+                            <span class="note">Espaço para o time e o equipamento.</span>
+                        </article>
+                        <article class="highlight-card">
+                            <span class="label">Motor</span>
+                            <strong>4B11T</strong>
+                            <span class="note">2.0L turbo de alumínio com injeção direta.</span>
+                        </article>
+                        <article class="highlight-card">
+                            <span class="label">0-100 km/h</span>
+                            <strong>4,8 s</strong>
+                            <span class="note">Launch control com gestão de torque ativa.</span>
+                        </article>
+                        <article class="highlight-card">
+                            <span class="label">Transmissão</span>
+                            <strong>TC-SST</strong>
+                            <span class="note">6 marchas dupla embreagem com modos S-Sport.</span>
+                        </article>
+                        <article class="highlight-card">
+                            <span class="label">Top speed</span>
+                            <strong>250 km/h</strong>
+                            <span class="note">Limitador eletrônico com estabilidade plena.</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="color-strip" aria-labelledby="color-options">
+                    <div class="color-header">
+                        <h2 id="color-options">Cores</h2>
+                        <span>Escolha o tom que fala por você.</span>
+                    </div>
+                    <div class="color-options">
+                        <button class="color-dot active" type="button" data-color="blue" aria-label="Azul metálico"></button>
+                        <button class="color-dot" type="button" data-color="white" aria-label="Branco perolizado"></button>
+                        <button class="color-dot" type="button" data-color="black" aria-label="Preto phantom"></button>
+                        <button class="color-dot" type="button" data-color="red" aria-label="Vermelho rally"></button>
+                        <button class="color-dot" type="button" data-color="grey" aria-label="Cinza titanium"></button>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer" aria-label="Rodapé">
+                <div class="footer-content">
+                    <h2>Pronto para despertar o Evo?</h2>
+                    <p>Agende sua imersão exclusiva com a equipe TizGon e conecte-se a uma frota lendária preparada no limite.</p>
                 </div>
-                <div class="color-options">
-                    <button class="color-dot active" type="button" data-color="blue" aria-label="Azul metálico"></button>
-                    <button class="color-dot" type="button" data-color="white" aria-label="Branco perolizado"></button>
-                    <button class="color-dot" type="button" data-color="black" aria-label="Preto phantom"></button>
-                    <button class="color-dot" type="button" data-color="red" aria-label="Vermelho rally"></button>
-                    <button class="color-dot" type="button" data-color="grey" aria-label="Cinza titanium"></button>
+                <div class="footer-actions">
+                    <button class="cta-btn" type="button">Montar meu Evo X</button>
+                    <button class="ghost-btn" type="button">Ver disponibilidade</button>
                 </div>
-            </section>
+            </footer>
         </div>
     </div>
 </body>
